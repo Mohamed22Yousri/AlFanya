@@ -13,7 +13,7 @@ const Details = () => {
           spacing={2}
           sx={{ textAlign: "center", marginBlock: "3rem" }}
         >
-          <Grid2 size={{ md: 6, sm: 12 }}>
+          <Grid2 size={{ md: 6, sm: 12 }}  sx={{margin:"auto"}}>
             <img style={{ width: "100%" }} src={logo} alt="" />
           </Grid2>
           <Grid2

@@ -4,14 +4,14 @@ const Phones = () => {
       <div className="Phones">
         <div className="container text-center mb-5">
           <div className="row">
-            <div className="col-md-4 col-sm-6 col-12">
+            <div className="col-md-4 col-sm-6 col-12 my-1">
               <a
                 href="tel:01116000899"
                 style={{
                   textDecoration: "none",
                   color: "inherit",
-                  display: "flex",
                   alignItems: "center",
+                  fontSize: "20px",
                 }}
               >
                 <span className="mt-2">
@@ -20,14 +20,14 @@ const Phones = () => {
                 <span className="mx-2">01116000899</span>
               </a>
             </div>
-            <div className="col-md-4 col-sm-6 col-12">
+            <div className="col-md-4 col-sm-6 col-12 my-1">
               <a
                 href="tel:01006180362"
                 style={{
                   textDecoration: "none",
                   color: "inherit",
-                  display: "flex",
                   alignItems: "center",
+                  fontSize: "20px",
                 }}
               >
                 <span className="mt-2">
@@ -36,14 +36,14 @@ const Phones = () => {
                 <span className="mx-2">01006180362</span>
               </a>
             </div>
-            <div className="col-md-4 col-sm-6 col-12">
+            <div className="col-md-4 col-sm-6 col-12 my-1">
               <a
                 href="tel:01000085853"
                 style={{
                   textDecoration: "none",
                   color: "inherit",
-                  display: "flex",
                   alignItems: "center",
+                  fontSize: "20px",
                 }}
               >
                 <span className="mt-2">
