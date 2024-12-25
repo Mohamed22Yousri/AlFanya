@@ -52,7 +52,7 @@ const Footer = () => {
                 </p>
                 <p>
                   <a href="#!" className="text-reset">
-                  Power Supply Unit
+                    Power Supply Unit
                   </a>
                 </p>
                 <p>
@@ -97,12 +97,15 @@ const Footer = () => {
                   <i className="fas fa-home me-3"></i> 2 st, Durrah Al-Fadl,
                   Al-Mhawlat, Trsa
                 </p>
-                <p>
+                <a
+                  href="mailto:elfaniacopiercairo@gmail.com"
+                  style={{ textDecoration: "none", color: "inherit", marginBlock:"2px" }}
+                >
                   <i className="fas fa-envelope me-3"></i>
-                  info@example.com
-                </p>
+                  elfaniacopiercairo@gmail.com
+                </a>
                 <p>
-                  <i className="fas fa-phone me-3"></i> 01006180362
+                  <i className="fas fa-phone me-3 mt-3"></i> 01006180362
                 </p>
                 <p>
                   <i className="fas fa-print me-3"></i> 01116000899

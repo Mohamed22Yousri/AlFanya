@@ -54,7 +54,7 @@ const Ky2551 = () => {
                   size="small"
                   name="simple-controlled"
                   value={value}
-                  onChange={(event, newValue) => {
+                  onChange={(_event, newValue) => {
                     setValue(newValue);
                   }}
                 />

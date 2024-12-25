@@ -49,14 +49,38 @@ const NavBar = () => {
               alignItems: "center",
             }}
           >
-            <span className="mt-1">
-              <i className="fa-solid fa-envelope"></i>
-            </span>
-            <span>Quick Email</span>
-            <span className="mt-1">
+            <a
+              href="mailto:elfaniacopiercairo@gmail.com"
+              style={{
+                textDecoration: "none",
+                color: "inherit",
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <span className="mt-1">
+                <i className="fa-solid fa-envelope"></i>
+              </span>
+              <span style={{ marginLeft: "8px" }}>Quick Email</span>
+            </a>
+            {/* <span className="mt-1">
               <i className="fa-solid fa-phone-volume"></i>{" "}
             </span>
-            <span>01006180362</span>
+            <span>01006180362</span> */}
+            <a
+              href="tel:01006180362"
+              style={{
+                textDecoration: "none",
+                color: "inherit",
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <span className="mt-1">
+                <i className="fa-solid fa-phone-volume"></i>
+              </span>
+              <span style={{ marginLeft: "8px" }}>01006180362</span>
+            </a>
           </div>
         </div>
       </nav>
