@@ -1,0 +1,10 @@
+* {
+  font-family: "Roboto", serif;
+  padding: 0;
+  margin: 0;
+}
+@media only screen and (max-width: 998px) {
+ .navbar-small {
+    display: none !important;
+  }
+}

@@ -1,0 +1,12 @@
+.card:hover {
+  background-color: white; /* تغيير لون الخلفية عند hover */
+}
+
+.card:hover .card-text {
+  display: block;
+  opacity: 1;
+}
+
+.card:hover .img-parent img {
+  transform: scale(1.05); /* تكبير الصورة عند hover */
+}

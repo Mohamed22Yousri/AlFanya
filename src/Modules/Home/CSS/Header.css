@@ -1,0 +1,19 @@
+.btn-contact {
+  border: 2px solid white ;
+  font-size: 20px;
+  width: 180px;
+  height: 46px;
+  border-radius: 20px;
+  background: black ;
+  color: white ;
+  transition: all 0.3s ease-in-out ; /* تأثير سلس للتغييرات */
+  padding-top: 5px;
+}
+
+.btn-contact:hover {
+  background: blue; /* لون أزرق لطيف */
+  border-color: blue; /* تغيير لون الحدود */
+  color: white; /* الحفاظ على لون النص */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* إضافة ظل خفيف */
+  transform: scale(1.05); /* تكبير الزر قليلاً */
+}
