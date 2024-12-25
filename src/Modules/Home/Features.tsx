@@ -30,7 +30,7 @@ const QualitySection = () => {
     },
   ];
 
-  const [hoverIndex, setHoverIndex] = useState(null);
+  const [hoverIndex, setHoverIndex] = useState<number | null>(null);
 
   return (
     <div style={{ background: "#f5f5f5", padding: "4rem 0" }}>
@@ -60,7 +60,7 @@ const QualitySection = () => {
               >
                 <div
                   dangerouslySetInnerHTML={{ __html: card.svg }}
-                  style={{  marginTop:"40px" }}
+                  style={{ marginTop: "40px" }}
                 ></div>
                 <Typography
                   variant="h6"

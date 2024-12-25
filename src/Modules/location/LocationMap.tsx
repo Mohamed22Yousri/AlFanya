@@ -22,9 +22,8 @@ const LocationMap = () => {
               height: "100%",
               border: "0",
             }}
-            allowFullScreen=""
+            allowFullScreen={true}
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>

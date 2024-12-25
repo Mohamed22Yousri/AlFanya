@@ -12,7 +12,6 @@ const NavBarTwo = () => {
             to="/"
             style={{ fontSize: "30px" }}
             className="navbar-brand"
-            href="#"
           >
             ALFANYA
           </Link>
@@ -43,7 +42,6 @@ const NavBarTwo = () => {
                   to="/print"
                   className="nav-link active"
                   aria-current="page"
-                  href="#"
                 >
                   Prints
                 </Link>
@@ -53,7 +51,6 @@ const NavBarTwo = () => {
                   to="/contact"
                   className="nav-link active"
                   aria-current="page"
-                  href="#"
                 >
                   Contact Us
                 </Link>
