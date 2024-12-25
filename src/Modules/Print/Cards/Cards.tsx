@@ -17,7 +17,7 @@ const Cards = () => {
     <>
       <div className="Cards">
         <div className="container text-center">
-          <div className="row">
+          <div className="row" style={{justifyContent:"center"}}>
             <Card
               className="my-5 col-md-4 col-sm-6 col-12 me-3"
               sx={{ maxWidth: 345 }}
