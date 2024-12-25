@@ -1,5 +1,5 @@
 import { Grid2, Rating, Stack, Typography } from "@mui/material";
-import logo from "../../../../assets/551ci.png";
+import logo from "../../../../assets/551ci (2).png";
 import { useState } from "react";
 
 const Ky5551ci = () => {

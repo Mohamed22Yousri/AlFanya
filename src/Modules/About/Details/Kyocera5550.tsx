@@ -1,5 +1,5 @@
 import { Grid2, Stack, Typography } from "@mui/material";
-import logo from "../../../assets/550.png";
+import logo from "../../../assets/550 (2).png";
 import Rating from "@mui/material/Rating";
 import { useState } from "react";
 

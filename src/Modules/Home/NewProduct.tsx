@@ -1,7 +1,7 @@
-import logo1 from "../../assets/7.jpg"
-import logo2 from "../../assets/8.jpg"
-import logo3 from "../../assets/6.jpg"
-import logo4 from "../../assets/551ci.png"
+import logo1 from "../../assets/7-removebg-preview.png"
+import logo2 from "../../assets/8-removebg-preview.png"
+import logo3 from "../../assets/6-removebg-preview.png"
+import logo4 from "../../assets/551ci (2).png"
 import logo5 from "../../assets/tank.png"
 import "./CSS/NewProducts.css";
 const ProductsSection = () => {

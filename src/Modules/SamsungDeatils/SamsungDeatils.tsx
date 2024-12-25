@@ -1,5 +1,5 @@
 import { Grid2, Rating, Stack, Typography } from "@mui/material";
-import logo from "../../assets/sam.jpg";
+import logo from "../../assets/sam.png";
 import { useState } from "react";
 
 const SamsungDeatils = () => {
