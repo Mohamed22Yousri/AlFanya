@@ -1,4 +1,4 @@
-import logo1 from "../../assets/7-removebg-preview.png"
+import logo1 from "../../assets/s5an-removebg-preview.png"
 import logo2 from "../../assets/8-removebg-preview.png"
 import logo3 from "../../assets/6-removebg-preview.png"
 import logo4 from "../../assets/551ci (2).png"
@@ -10,7 +10,7 @@ const ProductsSection = () => {
       id: 1,
       imgSrc: logo1,
       alt: "Card 1",
-      title: "Toner",
+      title: "Fuser",
     },
     {
       id: 2,
@@ -78,15 +78,16 @@ const ProductsSection = () => {
                       transition: "transform 0.3s ease", // تأثير التغيير في الصورة
                     }}
                   >
-                    <img
+                 <div style={{textAlign:"center"}}>
+                 <img
                       src={card.imgSrc}
                       alt={card.alt}
                       className="w-100"
                       style={{
-                        height: "100%",
                         transition: "transform 0.5s ease", // تأثير التغيير في الصورة
                       }}
                     />
+                 </div>
                   </div>
                   <div className="text-center">
                     <h2>{card.title}</h2>
