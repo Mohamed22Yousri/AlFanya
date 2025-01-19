@@ -12,6 +12,7 @@ const Home = () => {
       <Category />
       <Features />
       <NewProducts/>
+
     </>
   );
 };

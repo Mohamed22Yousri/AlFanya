@@ -1,65 +1,67 @@
 import { Link } from "react-router-dom";
+import { useSpring, animated } from "@react-spring/web"; // استيراد react-spring
 
 const NavBarTwo = () => {
-  return (
-    <>
-      <nav
-        style={{ position: "sticky", top: "0", zIndex: "3" }}
-        className="navbar navbar-expand-lg bg-white shadow-lg p-3  bg-body-tertiary rounded"
-      >
-        <div className="container">
-          <Link
-            to="/"
-            style={{ fontSize: "30px" }}
-            className="navbar-brand"
-          >
-            ALFANYA
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul
-              className="navbar-nav ms-auto mb-2 mb-lg-0"
-              style={{ fontSize: "20px" }}
-            >
-              <li className="nav-item">
-                <Link to="/" className="nav-link active" aria-current="page">
-                  Home
-                </Link>
-              </li>
+  const fadeIn = useSpring({
+    opacity: 1,
+    from: { opacity: 0 }, // يبدأ من الشفافية 0
+    config: { duration: 2000 }, // تحديد مدة الأنيمشن بالميلي ثانية (2000ms = 2 ثواني)
+  });
 
-              <li className="nav-item">
-                <Link
-                  to="/print"
-                  className="nav-link active"
-                  aria-current="page"
-                >
-                  Prints
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="/contact"
-                  className="nav-link active"
-                  aria-current="page"
-                >
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
-          </div>
+  return (
+    <animated.nav
+      style={{
+        ...fadeIn,
+        position: "sticky",
+        top: "0",
+        zIndex: "3",
+      }}
+      className="navbar navbar-expand-lg bg-white shadow-lg p-3  bg-body-tertiary rounded"
+    >
+      <div className="container">
+        <Link to="/" style={{ fontSize: "30px" }} className="navbar-brand">
+          ALFANYA
+        </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            className="navbar-nav ms-auto mb-2 mb-lg-0"
+            style={{ fontSize: "20px" }}
+          >
+            <li className="nav-item">
+              <Link to="/" className="nav-link active" aria-current="page">
+                Home
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link to="/print" className="nav-link active" aria-current="page">
+                Prints
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/contact"
+                className="nav-link active"
+                aria-current="page"
+              >
+                Contact Us
+              </Link>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </>
+      </div>
+    </animated.nav>
   );
 };
 
