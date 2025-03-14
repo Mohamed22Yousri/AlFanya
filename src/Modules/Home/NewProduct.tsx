@@ -92,7 +92,6 @@ const ProductsSection = () => {
                       state={{
                         image: card.image,
                         title: card.title,
-                        subheader: card.subheader,
                         description: card.description,
                         stock: card.stock,
                         Price: card.Price,
