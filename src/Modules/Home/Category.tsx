@@ -1,12 +1,15 @@
-import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+
+
 import imgTwo from "../../assets/550 (2).png";
 import imgThree from "../../assets/551ci (2).png";
 import imgOne from "../../assets/sam.png";
 import imgEight from "../../assets/download.jpg";
 import { Link } from "react-router-dom";
+// import "swiper/css/bundle";
+
 
 const cards = [
   {
@@ -67,6 +70,8 @@ const cards = [
 ];
 
 const CardSwiper = () => {
+ 
+  
   return (
     <div className="max-w-4xl mx-auto p-4">
       <h2 style={{ marginBottom: "2rem", fontWeight: "bold" }}>Top Category</h2>
