@@ -119,7 +119,7 @@ const Footer = () => {
           className="text-center p-4"
           style={{ background: "rgba(0, 0, 0, 0.05)" }}
         >
-          © 2024 Copyright:
+          © 2025 Copyright:
           <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
             ALFANYA
           </a>
