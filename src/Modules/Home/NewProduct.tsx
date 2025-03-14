@@ -8,9 +8,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import img from "../../assets/FOREARTH_white.png";
 import kyo from "../../assets/0304logo-thumb-320x240-162.jpg";
 import "./CSS/NewProducts.css";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 import { Link } from "react-router-dom";
 const ProductsSection = () => {
   const cards = [

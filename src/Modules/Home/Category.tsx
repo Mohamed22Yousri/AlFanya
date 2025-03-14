@@ -2,7 +2,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
 import imgTwo from "../../assets/550 (2).png";
 import imgThree from "../../assets/551ci (2).png";
 import imgOne from "../../assets/sam.png";
