@@ -1,4 +1,4 @@
-import Category from "./Category";
+import CardSwiper from "./Category";
 import Header from "./Header";
 import Services from "./Services";
 import Features from "./Features";
@@ -9,7 +9,7 @@ const Home = () => {
     <>
       <Header />
       <Services />
-      <Category />
+      <CardSwiper />
       <Features />
       <NewProducts/>
 

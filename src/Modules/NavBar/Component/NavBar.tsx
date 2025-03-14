@@ -9,14 +9,17 @@ const NavBar = () => {
   });
 
   return (
-    <animated.nav style={fadeIn} className="navbar navbar-small navbar-expand-lg bg-primary">
+    <animated.nav
+      style={fadeIn}
+      className="navbar navbar-small navbar-expand-lg bg-white"
+    >
       <div className="container">
         <div
           className="d-flex"
           style={{
             gap: "12px",
-            fontSize: "20px",
-            color: "white",
+            fontSize: "1rem",
+            color: "black",
             alignItems: "center",
           }}
         >
@@ -38,7 +41,7 @@ const NavBar = () => {
             style={{
               cursor: "pointer",
               textDecoration: "none",
-              color: "white",
+              color: "black",
             }}
             className="ps-2"
           >
@@ -50,8 +53,8 @@ const NavBar = () => {
           className="d-flex"
           style={{
             gap: "12px",
-            fontSize: "18px",
-            color: "white",
+            fontSize: "1rem",
+            color: "black",
             alignItems: "center",
           }}
         >

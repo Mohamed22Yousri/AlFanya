@@ -16,7 +16,7 @@ const About = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const { image, title, description, stock } = location.state || {};
+  const { image, title, description, del , Price } = location.state || {};
 
   if (!location.state) {
     return <Typography>Data is not available!</Typography>;
@@ -85,7 +85,6 @@ const About = () => {
                     }}
                   />
                 </Typography>
-                <Typography>Stock: {stock}</Typography>
                 <Typography sx={{ paddingBlock: "3px" }}>
                   Availabilty: In Stock
                 </Typography>
@@ -98,10 +97,10 @@ const About = () => {
                       marginRight: "6px",
                     }}
                   >
-                    $14.99{" "}
+                    {del}
                   </span>
                   <span style={{ fontWeight: "bold", color: "black" }}>
-                    from $13
+                    from {Price} EGP
                   </span>
                 </Typography>
               </Stack>

@@ -1,34 +1,58 @@
-import logo1 from "../../assets/s5an-removebg-preview.png"
-import logo2 from "../../assets/8-removebg-preview.png"
-import logo3 from "../../assets/6-removebg-preview.png"
-import logo4 from "../../assets/551ci (2).png"
-import logo5 from "../../assets/tank.png"
+import logo1 from "../../assets/s5an-removebg-preview.png";
+import logo2 from "../../assets/8-removebg-preview.png";
+import logo3 from "../../assets/6-removebg-preview.png";
+import logo5 from "../../assets/tank.png";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import img from "../../assets/FOREARTH_white.png";
+import kyo from "../../assets/0304logo-thumb-320x240-162.jpg";
 import "./CSS/NewProducts.css";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 const ProductsSection = () => {
-  const cardData = [
+  const cards = [
     {
-      id: 1,
-      imgSrc: logo1,
-      alt: "Card 1",
-      title: "Fuser",
+      image: logo1,
+      title: "Fuser Unit",
+      description:
+        "The Fuser Unit in a photocopier or printer is responsible for permanently fixing the toner onto the paper using heat and pressure.It consists of two rollers:",
+      link: "/about/2",
+      stock: "Available",
+      del: "8000",
+      Price: "7500",
     },
     {
-      id: 2,
-      imgSrc: logo2,
-      alt: "Card 2",
+      image: logo2,
       title: "Drum Unit",
+      description:
+        "The Drum Unit in a photocopier or laser printer is a critical component responsible for transferring the toner onto the paper to create an image or text.",
+      link: "/about/3",
+      stock: "Available",
+      del: "1500",
+      Price: "1200",
     },
     {
-      id: 3,
-      imgSrc: logo3,
-      alt: "Card 3",
-      title: "Pickup Rollers",
+      image: logo3,
+      title: "Pickup Roller",
+      description:
+        "The Pickup Roller in a photocopier or printer is responsible for feeding the paper from the tray into the machine.",
+      link: "/about/9",
+      stock: "Available",
+      del: "400",
+      Price: "350",
     },
     {
-      id: 4,
-      imgSrc: logo5,
-      alt: "Card 4",
+      image: logo5,
       title: "Tank",
+      description:
+        "Types of Tanks in a Copier:Toner Tank (Toner Cartridge / Hopper)Stores the toner powder, which is used to create the image on the paper.When depleted, it needs to be refilled or replaced.",
+      link: "/about/3",
+      stock: "Available",
+      del: "20000",
+      Price: "19000",
     },
   ];
 
@@ -43,69 +67,63 @@ const ProductsSection = () => {
         </h2>
       </div>
       <div className="container-fluid">
-        <div className="row">
-          <div
-            className="col-12 col-md-7 pt-16 order-1 order-md-0 d-flex mt-5"
-            style={{ alignItems: "center" }}
-          >
-            <div
-              style={{ gap: "20px" }}
-              className="d-flex flex-column flex-sm-row justify-content-center align-items-center pb-13 px-5 row"
+        <div className="row d-flex align-items-center">
+          {/* Swiper Slider */}
+          <div className="col-md-7">
+            <Swiper
+              modules={[Navigation, Pagination, Autoplay]}
+              spaceBetween={20}
+              slidesPerView={1}
+              navigation
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 3000 }}
+              breakpoints={{
+                640: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+              }}
+              className="pb-10"
             >
-              {cardData.map((card) => (
-                <div
-                  key={card.id}
-                  className="card col-12 col-sm-6 col-md-4 mb-3"
-                  style={{
-                    width: "50%",
-                    maxWidth: "300px", // لتحديد أقصى عرض للكروت في الشاشات الأكبر
-                    height: "200px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    position: "relative", // مهم لتموضع النص داخل الكرت
-                    overflow: "hidden", // إخفاء النصوص أو العناصر التي تخرج عن الكرت
-                    cursor: "pointer",
-                    transition: "background-color 0.3s ease", // تأثير تدرج اللون
-                  }}
-                >
-                  <div
-                    className="img-parent"
-                    style={{
-                      height: "170px",
-                      overflow: "hidden",
-                      position: "relative",
-                      transition: "transform 0.3s ease", // تأثير التغيير في الصورة
-                    }}
-                  >
-                 <div style={{textAlign:"center"}}>
-                 <img
-                      src={card.imgSrc}
-                      alt={card.alt}
-                      className="w-100"
-                      style={{
-                        transition: "transform 0.5s ease", // تأثير التغيير في الصورة
+              {cards.map((card) => (
+                <SwiperSlide key={card.link}>
+                  <div className="bg-white p-6 rounded-2xl shadow-md text-center group overflow-hidden">
+                    <Link
+                      to={card.link}
+                      state={{
+                        image: card.image,
+                        title: card.title,
+                        subheader: card.subheader,
+                        description: card.description,
+                        stock: card.stock,
+                        Price: card.Price,
+                        del: card.del,
                       }}
-                    />
-                 </div>
+                      onClick={() => window.scrollTo(0, 0)}
+                    >
+                      <div className="overflow-hidden rounded-2xl">
+                        <img
+                          src={card.image}
+                          alt={card.title}
+                          className="w-full category-img h-64 object-cover rounded-2xl transition-transform duration-500 group-hover:scale-110"
+                        />
+                      </div>
+                    </Link>
+                    <h3 className="text-xl font-bold my-3">{card.title}</h3>
+                    <p className="text-gray-600">{card.description}</p>
                   </div>
-                  <div className="text-center">
-                    <h2>{card.title}</h2>
-                  </div>
-                </div>
+                </SwiperSlide>
               ))}
-            </div>
+            </Swiper>
           </div>
 
-          <div className="col-12 col-md-5">
-            <img
-              className="w-100"
-              src={logo4}
-              alt=""
-            />
+          {/* Image جنب الـ Swiper */}
+          <div className="col-md-5 text-center">
+            <img className="w-100" src={img} alt="Product Image" />
           </div>
         </div>
       </div>
+
+      <img className="w-100" src={kyo} alt="" />
     </div>
   );
 };

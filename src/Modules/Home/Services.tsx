@@ -18,14 +18,19 @@ const Services = () => {
   ];
 
   return (
-    <div className="services mt-5">
+    <div className="services my-5">
       <div
         className="container w-100 d-flex justify-content-center align-items-center"
         style={{ paddingInline: "auto" }}
       >
         <div
           className="row justify-content-center"
-          style={{ display: "flex", flexWrap: "wrap", margin: "12px" }}
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            margin: "12px",
+            marginTop: "3rem",
+          }}
         >
           {services.map((service, index) => (
             <div

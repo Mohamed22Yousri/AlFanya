@@ -12,15 +12,12 @@ const NavBarTwo = () => {
     <animated.nav
       style={{
         ...fadeIn,
-        position: "sticky",
-        top: "0",
-        zIndex: "3",
       }}
-      className="navbar navbar-expand-lg bg-white shadow-lg p-3  bg-body-tertiary rounded"
+      className="navbar navbar-expand-lg bg-white  rounded"
     >
       <div className="container">
         <Link to="/" style={{ fontSize: "30px" }} className="navbar-brand">
-          ALFANYA
+          ALFANIA
         </Link>
         <button
           className="navbar-toggler"
